@@ -72,7 +72,7 @@
 
     // Register Service Worker explicitly
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./firebase-messaging-sw.js')
+      navigator.serviceWorker.register('./web_notification_poc/firebase-messaging-sw.js')
         .then((registration) => {
           console.log('Service Worker registered successfully with scope:', registration.scope);
         })
