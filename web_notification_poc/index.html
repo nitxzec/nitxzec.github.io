@@ -53,6 +53,8 @@
     };
     const app = initializeApp(firebaseConfig);
     const messaging = getMessaging(app);
+    const enableBtn = document.getElementById("enable-btn");
+    const tokenDisplay = document.getElementById("token");
 
     // 1. Get the repository name/subpath dynamically from the current URL
     const repoPath = window.location.pathname.replace(/\/$/, ''); // Removes trailing slash
