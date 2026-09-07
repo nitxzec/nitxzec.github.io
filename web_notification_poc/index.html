@@ -43,20 +43,29 @@
     import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js";
 
     // 1. Replace with your actual Firebase configuration
+    // const firebaseConfig = {
+    //   apiKey: "YOUR_API_KEY",
+    //   authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    //   projectId: "YOUR_PROJECT_ID",
+    //   storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
+    //   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    //   appId: "YOUR_APP_ID"
+    // };
     const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      appId: "YOUR_APP_ID"
+      apiKey: "AIzaSyBX3KCMDyL00gFZmLW_G940uo3Vh4DwZbw",
+      authDomain: "simple-web-push-poc.firebaseapp.com",
+      projectId: "simple-web-push-poc",
+      storageBucket: "simple-web-push-poc.firebasestorage.app",
+      messagingSenderId: "286960834774",
+      appId: "1:286960834774:web:1a235076528fbd7c5bd177",
+      measurementId: "G-PB0GSE7Q4C"
     };
 
     const app = initializeApp(firebaseConfig);
     const messaging = getMessaging(app);
 
     // 2. Replace with your VAPID Public Key from Firebase Console
-    const VAPID_KEY = "YOUR_VAPID_PUBLIC_KEY";
+    const VAPID_KEY = "BK7TeFd5gWn897bYRvNlAuujHXFd7wJhTCV2h-6lNXunWd41BNqx_R9yYRIxg2UcsZz9PahfgYs5TxJDKLHe4K0";
 
     const enableBtn = document.getElementById("enable-btn");
     const tokenDisplay = document.getElementById("token");
